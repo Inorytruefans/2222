@@ -1,0 +1,12 @@
+{% extends 'base.jinja' %}
+
+
+{% block content %} 
+    <h1>Friend List</h1>
+    <ul>
+        {% for friend in friend_list %}
+            <li>{{ friend }}</li>
+        {% endfor %}
+    </ul>
+    
+{% endblock %}

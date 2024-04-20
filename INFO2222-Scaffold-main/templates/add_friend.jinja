@@ -1,0 +1,12 @@
+{% extends 'base.jinja' %}
+
+
+{% block content %} 
+    <h1>Add Friend</h1>
+    <form action="/add_friend" method="post">
+        <label for="friend_username">Friend Username:</label>
+        <input type="text" id="friend_username" name="friend_username" required>
+        <button type="submit">Add Friend</button>
+    </form>
+    
+{% endblock %}
